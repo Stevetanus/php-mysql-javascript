@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery basic</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <blockquote>Powerful and flexible as JavaScript is, with a plethora of built-in functions, it is still necessary to use additional code for simple things that cannot be achieved natively or with CSS, such as animations, event handling, and asynchronous communication.</blockquote>
+        <div id="advert">This is an ad</div>
+        <p>This is my <span class="new">new</span> website</p>
+        <script>
+            $('blockquote').css('background', 'lime')
+            $('#advert').css('border', '3px dashed')
+            $('.new').css('text-decoration', 'underline')
+            $('blockquote, #advert, .new').css('font-weight', 'bold') // select multiple elements
+        </script>
+    </body>
+</html>
